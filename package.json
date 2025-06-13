@@ -1,0 +1,15 @@
+{
+  "name": "twitter_clone",
+  "version": "1.0.0",
+  "description": "created an twitter clone using tailwind css",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./css/input.css -o ./css/output.css --watch"
+  },
+  "author": "Aditya",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
