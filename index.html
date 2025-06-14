@@ -7,6 +7,7 @@
     <title>Home/X</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="./css/output.css">
+    <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter-pip.3.ico">
 
 </head>
 
@@ -23,22 +24,255 @@
                     </g>
                 </svg>
             </div>
-            <div class="sidebar flex justify-end">
-                <ul class="flex flex-col text-2xl space-y-4 px-11 ">
-                    <li class="flex justify-start items-center gap-3 px-5 py-3 w-fit hover:bg-gray-900 hover:rounded-full cursor-pointer font-bold"><span class="material-symbols-outlined text-3xl">home</span>Home</li>
-                    <li class="flex justify-start items-center gap-3 px-5 py-3 w-fit hover:bg-gray-900 hover:rounded-full cursor-pointer"><span class="material-symbols-outlined text-3xl">search</span>Explore</li>
-                    <li class="flex justify-start items-center gap-3 px-5 py-3 w-fit hover:bg-gray-900 hover:rounded-full cursor-pointer"><span class="material-symbols-outlined text-3xl">notifications</span>Notifications</li>
-                    <li class="flex justify-start items-center gap-3 px-5 py-3 w-fit hover:bg-gray-900 hover:rounded-full cursor-pointer"><span class="material-symbols-outlined text-3xl">mail</span>Message</li>
-                    <li class="flex justify-start items-center gap-3 px-5 py-3 w-fit hover:bg-gray-900 hover:rounded-full cursor-pointer"><span class="material-symbols-outlined text-3xl">add</span>Grock</li>
-                    <li class="flex justify-start items-center gap-3 px-5 py-3 w-fit hover:bg-gray-900 hover:rounded-full cursor-pointer"><span class="material-symbols-outlined text-3xl">group</span>Community</li>
-                    <li class="flex justify-start items-center gap-3 px-5 py-3 w-fit hover:bg-gray-900 hover:rounded-full cursor-pointer"><span class="material-symbols-outlined text-3xl">home</span>Premium</li>
-                    <li class="flex justify-start items-center gap-3 px-5 py-3 w-fit hover:bg-gray-900 hover:rounded-full cursor-pointer"><span class="material-symbols-outlined text-3xl">person</span>Profile</li>
-                    <li class="flex justify-start items-center gap-3 px-5 py-3 w-fit hover:bg-gray-900 hover:rounded-full cursor-pointer"><span class="material-symbols-outlined text-3xl">pending</span>More</li>
+            <div class="sidebar flex items-end flex-col">
+                <ul class="flex flex-col text-2xl space-y-4 px-2 md:px-11 ">
+                    <li
+                        class="flex justify-start items-center gap-3 px-5 py-3 w-fit hover:bg-gray-900 hover:rounded-full cursor-pointer font-bold">
+                        <span class="material-symbols-outlined text-3xl">home</span> <span class="hidden md:block">
+                            Home</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 px-5 py-3 w-fit hover:bg-gray-900 hover:rounded-full cursor-pointer">
+                        <span class="material-symbols-outlined text-3xl">search</span> <span class="hidden md:block">
+                            Explore</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 px-5 py-3 w-fit hover:bg-gray-900 hover:rounded-full cursor-pointer">
+                        <span class="material-symbols-outlined text-3xl">notifications</span> <span
+                            class="hidden md:block">Notifications</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 px-5 py-3 w-fit hover:bg-gray-900 hover:rounded-full cursor-pointer">
+                        <span class="material-symbols-outlined text-3xl">mail</span> <span class="hidden md:block">Message</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 px-5 py-3 w-fit hover:bg-gray-900 hover:rounded-full cursor-pointer">
+                        <span class="material-symbols-outlined text-3xl">add</span> <span class="hidden md:block">
+                            Grock</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 px-5 py-3 w-fit hover:bg-gray-900 hover:rounded-full cursor-pointer">
+                        <span class="material-symbols-outlined text-3xl">group</span> <span class="hidden md:block">
+                            Community</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 px-5 py-3 w-fit hover:bg-gray-900 hover:rounded-full cursor-pointer">
+                        <span class="material-symbols-outlined text-3xl">home</span> <span class="hidden md:block">
+                            Premium</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 px-5 py-3 w-fit hover:bg-gray-900 hover:rounded-full cursor-pointer">
+                        <span class="material-symbols-outlined text-3xl">person</span> <span class="hidden md:block">
+                            Profile</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 px-5 py-3 w-fit hover:bg-gray-900 hover:rounded-full cursor-pointer">
+                        <span class="material-symbols-outlined text-3xl">pending</span> <span class="hidden md:block">
+                            More</span>
+                    </li>
+                    <li>
+                        <div class="button w-full text-center flex justify-center ">
+                            <button
+                                class="text-black bg-white hidden md:block text-2xl w-60 rounded-full h-14 font-semibold">Post</button>
+                            <button
+                                class="text-black bg-white md:hidden text-2xl w-14 h-14 font-semibold rounded-full flex items-center justify-center">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" class="w-6 h-6"
+                                    style="color: rgb(15, 20, 25);">
+                                    <g>
+                                        <path
+                                            d="M23 3c-6.62-.1-10.38 2.421-13.05 6.03C7.29 12.61 6 17.331 6 22h2c0-1.007.07-2.012.19-3H12c4.1 0 7.48-3.082 7.94-7.054C22.79 10.147 23.17 6.359 23 3zm-7 8h-1.5v2H16c.63-.016 1.2-.08 1.72-.188C16.95 15.24 14.68 17 12 17H8.55c.57-2.512 1.57-4.851 3-6.78 2.16-2.912 5.29-4.911 9.45-5.187C20.95 8.079 19.9 11 16 11zM4 9V6H1V4h3V1h2v3h3v2H6v3H4z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </button>
+
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="second w-full border-[1px] border-x-white border-y-black">b</div>
-        <div class="third w-full">c</div>
+        <div class="second w-full border-[1px] border-x-white border-y-black">
+            <div class="top flex p-3 relative">
+                <div class="underline absolute bottom-0 left-[19%] w-16 h-1.5 rounded-full bg-blue-500">
+
+                </div>
+                <div class="left w-1/2  flex justify-center font-semibold text-lg">For you</div>
+                <div class="right w-1/2  flex justify-center font-semibold text-lg">Following</div>
+                <div class="settings mx-2"><span class="material-symbols-outlined">settings</span></div>
+            </div>
+            <div class="h-[1px] bg-gray-700 w-full"></div>
+            <div class="whatshappening flex my-2 gap-2">
+                <div class="img m-3">
+                    <img src="https://pbs.twimg.com/profile_images/1808127729394483200/mWOiliCR_bigger.png"
+                        class="rounded-full" width="55px" alt="image">
+                </div>
+                <div class="w-full">
+                    <input type="text" class="bg-black text-2xl outline-none h-8 my-2 w-full"
+                        placeholder="What's happening?">
+                    <div class="globe text-blue-400 font-bold flex items-center gap-2 my-4">
+                        <span class="material-symbols-outlined">globe_asia</span>
+                        <span>Everyone can reply</span>
+                    </div>
+                    <div class="bg-white w-[95%] h-[0.5px] my-4"></div>
+                    <div class="icons text-blue-400 flex gap-3">
+                        <span class="material-symbols-outlined cursor-pointer">image</span>
+                        <span class="material-symbols-outlined cursor-pointer">gif_box</span>
+                        <span class="material-symbols-outlined cursor-pointer">ballot</span>
+                        <span class="material-symbols-outlined cursor-pointer">sentiment_satisfied</span>
+                        <span class="material-symbols-outlined cursor-pointer">calendar_month</span>
+                        <span class="material-symbols-outlined cursor-pointer">location_on</span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="posts">
+                <div class="post">
+                    <div class="flex">
+
+                        <div class="image m-4">
+                            <img src="https://pbs.twimg.com/profile_images/1285795195884199936/ZCCtzvKj_normal.jpg"
+                                class="rounded-full" width="80px" alt="image">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline cursor-pointer">Megh Updates 🚨™</span> <span
+                                class="text-gray-500"> @MeghUpdates · 11h</span>
+                            <div>🚨 Last message to ATC from AI 171 Pilot Capt. Sumit Sabharwal:
+
+                                “MAYDAY... MAYDAY... MAYDAY... NO POWER... NO THRUST... GOING DOWN.” — [News18]</div>
+                            <div class="postimg m-4 ml-0">
+                                <img src="https://pbs.twimg.com/media/GtYq5stXoAENoN6?format=jpg&name=small"
+                                    class="rounded-xl" alt="">
+                            </div>
+                            <div class="icons mx-3 text-gray-500 flex justify-between">
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">chat_bubble</span>302
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">repeat</span>2.9k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">favorite</span>32k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">bar_chart</span>3.9M
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="post">
+                    <div class="flex">
+
+                        <div class="image m-4">
+                            <img src="https://pbs.twimg.com/profile_images/1285795195884199936/ZCCtzvKj_normal.jpg"
+                                class="rounded-full" width="80px" alt="image">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline cursor-pointer">Megh Updates 🚨™</span> <span
+                                class="text-gray-500"> @MeghUpdates · 11h</span>
+                            <div>🚨 Last message to ATC from AI 171 Pilot Capt. Sumit Sabharwal:
+
+                                “MAYDAY... MAYDAY... MAYDAY... NO POWER... NO THRUST... GOING DOWN.” — [News18]</div>
+                            <div class="postimg m-4 ml-0">
+                                <img src="https://pbs.twimg.com/media/GtYq5stXoAENoN6?format=jpg&name=small"
+                                    class="rounded-xl" alt="">
+                            </div>
+                            <div class="icons mx-3 text-gray-500 flex justify-between">
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">chat_bubble</span>302
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">repeat</span>2.9k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">favorite</span>32k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">bar_chart</span>3.9M
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="post">
+                    <div class="flex">
+
+                        <div class="image m-4">
+                            <img src="https://pbs.twimg.com/profile_images/1285795195884199936/ZCCtzvKj_normal.jpg"
+                                class="rounded-full" width="80px" alt="image">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline cursor-pointer">Megh Updates 🚨™</span> <span
+                                class="text-gray-500"> @MeghUpdates · 11h</span>
+                            <div>🚨 Last message to ATC from AI 171 Pilot Capt. Sumit Sabharwal:
+
+                                “MAYDAY... MAYDAY... MAYDAY... NO POWER... NO THRUST... GOING DOWN.” — [News18]</div>
+                            <div class="postimg m-4 ml-0">
+                                <img src="https://pbs.twimg.com/media/GtYq5stXoAENoN6?format=jpg&name=small"
+                                    class="rounded-xl" alt="">
+                            </div>
+                            <div class="icons mx-3 text-gray-500 flex justify-between">
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">chat_bubble</span>302
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">repeat</span>2.9k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">favorite</span>32k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">bar_chart</span>3.9M
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="third w-full">
+            <div class="search m-3">
+                <input type="text" placeholder="search"
+                    class="bg-[#000000] text-white w-1/2 rounded-full px-4 py-2  border-slate-700 border">
+            </div>
+            <div class="trending shadow-xl border-slate-700 border bg-[#000000] w-1/2 m-3 py-5 rounded-2xl space-y-3">
+                <h1 class="font-bold text-xl px-3">What's happening?</h1>
+                <div class="items  p-3 hover:bg-gray-800 cursor-pointer">
+                    <div class="text-gray-400 font-bold text-sm">Trending in India</div>
+                    <div class="font-bold">#WorldWar3</div>
+                    <div class="text-gray-400 text-sm">4,571 posts</div>
+                </div>
+                <div class="items  p-3 hover:bg-gray-800 cursor-pointer">
+                    <div class="text-gray-400 font-bold text-sm">Trending in India</div>
+                    <div class="font-bold">#WorldWar3</div>
+                    <div class="text-gray-400 text-sm">4,571 posts</div>
+                </div>
+                <div class="items  p-3 hover:bg-gray-800 cursor-pointer">
+                    <div class="text-gray-400 font-bold text-sm">Trending in India</div>
+                    <div class="font-bold">#WorldWar3</div>
+                    <div class="text-gray-400 text-sm">4,571 posts</div>
+                </div>
+                <div class="items  p-3 hover:bg-gray-800 cursor-pointer">
+                    <div class="text-gray-400 font-bold text-sm">Trending in India</div>
+                    <div class="font-bold">#WorldWar3</div>
+                    <div class="text-gray-400 text-sm">4,571 posts</div>
+                </div>
+            </div>
+            <div class="who shadow-xl border-slate-700 border bg-[#000000] w-1/2 m-3 py-5 rounded-2xl space-y-3">
+                <h1 class="font-bold text-xl px-3">Who to follow</h1>
+                <div class="items  p-3 space-y-4">
+                    <div class="text-gray-200 font-bold cursor-pointer">CodeWithHarry</div>
+                    <div class="text-gray-200 font-bold cursor-pointer">PassangerParamvir</div>
+                </div>
+                <div class="text-blue-400 my-5 px-3">Show more</div>
+
+            </div>
+        </div>
     </div>
 </body>
 
